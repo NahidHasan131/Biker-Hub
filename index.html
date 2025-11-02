@@ -18,13 +18,14 @@
         }
         @theme {       
              --color-primary: #E76F51;      
+             --color-secondary: rgba(231, 111, 81, 0.1);      
         }
     </style>
  
 </head>
 <body class="poppins">
     <!-- Header -->
-    <header class="container mx-auto">
+    <header class="container mx-auto px-10">
     <nav>
         <div class="navbar py-6">
             <div class="flex-1">
@@ -56,9 +57,213 @@
             </div>
         </div>
     </nav>
+
+    <!-- Slider -->
+    <div class="carousel w-full lg:h-[550px] rounded-lg mb-20 mt-12">
+        <!-- Slide-1 -->
+        <div id="slide1" class="carousel-item relative w-full bg-secondary">
+            <div class="flex p-12 lg:p-24 flex-col lg:flex-row items-center">
+                <div class="space-y-8 flex-1">
+                    <h2 class="text-3xl md:text-6xl font-bold mb-4">Ride-on R15 V4 <br>with Smile</h2>
+                    <p class="mb-6 font-light text-gray-700">Discover top-quality bikes and gear at Biker Hub. Whether you're a seasoned rider or just starting out, we have everything you need to hit the road with confidence and style.</p>
+                    <button class="btn btn-primary md:btn-lg text-white font-semibold">Purchase</button>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="./images/slider/bike1.png"/>
+                </div>
+            </div>
+            <div class="absolute left-5 right-5 lg:left-10 lg:right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="text-2xl">❮</a>
+                <a href="#slide2" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <!-- Slide-1 -->
+        <div id="slide2" class="carousel-item relative w-full bg-secondary">
+            <div class="flex p-12 lg:p-24 flex-col lg:flex-row items-center">
+                <div class="space-y-8 flex-1">
+                    <h2 class="text-3xl md:text-6xl font-bold mb-4">Ride-on R15 V4 <br>with Smile</h2>
+                    <p class="mb-6 font-light text-gray-700">Discover top-quality bikes and gear at Biker Hub. Whether you're a seasoned rider or just starting out, we have everything you need to hit the road with confidence and style.</p>
+                    <button class="btn btn-primary md:btn-lg text-white font-semibold">Purchase</button>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="./images/slider/bike2.png"/>
+                </div>
+            </div>
+            <div class="absolute left-5 right-5 lg:left-10 lg:right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="text-2xl">❮</a>
+                <a href="#slide3" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <!-- Slide-1 -->
+        <div id="slide3" class="carousel-item relative w-full bg-secondary">
+            <div class="flex p-12 lg:p-24 flex-col lg:flex-row items-center">
+                <div class="space-y-8 flex-1">
+                    <h2 class="text-3xl md:text-6xl font-bold mb-4">Ride-on R15 V4 <br>with Smile</h2>
+                    <p class="mb-6 font-light text-gray-700">Discover top-quality bikes and gear at Biker Hub. Whether you're a seasoned rider or just starting out, we have everything you need to hit the road with confidence and style.</p>
+                    <button class="btn btn-primary md:btn-lg text-white font-semibold">Purchase</button>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="./images/slider/bike3.png"/>
+                </div>
+            </div>
+            <div class="absolute left-5 right-5 lg:left-10 lg:right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="text-2xl">❮</a>
+                <a href="#slide4" class="text-2xl">❯</a>
+            </div>
+        </div>
+        <!-- Slide-1 -->
+        <div id="slide4" class="carousel-item relative w-full bg-secondary">
+            <div class="flex p-12 lg:p-24 flex-col lg:flex-row items-center">
+                <div class="space-y-8 flex-1">
+                    <h2 class="text-3xl md:text-6xl font-bold mb-4">Ride-on R15 V4 <br>with Smile</h2>
+                    <p class="mb-6 font-light text-gray-700">Discover top-quality bikes and gear at Biker Hub. Whether you're a seasoned rider or just starting out, we have everything you need to hit the road with confidence and style.</p>
+                    <button class="btn btn-primary md:btn-lg text-white font-semibold">Purchase</button>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="./images/slider/bike4.png"/>
+                </div>
+            </div>
+            <div class="absolute left-5 right-5 lg:left-10 lg:right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="text-2xl">❮</a>
+                <a href="#slide1" class="text-2xl">❯</a>
+            </div>
+        </div>
+        
+    </div>
+
     </header>
     <!-- Main -->
-    <main class="container mx-auto">
+    <main class="container mx-auto px-10">
+        <!-- Featured Bike -->
+         <div>
+            <!-- Feature Content -->
+             <div class="text-center mb-10">
+                <h1 class="text-5xl font-semibold">Fetured Bikes In This Year</h1>
+                <p class="text-sm text-primary border-b border-primary inline">Best bike collection</p>
+             </div>
+             <div class="flex items-center justify-between gap-6 flex-wrap mb-24">
+                <img class="grayscale" src="./images/others/feature-bike.png" alt="">
+                <img  src="./images/others/feature-bike.png" alt="">
+                <img class="grayscale" src="./images/others/feature-bike.png" alt="">
+             </div>
+         </div>
+
+        <!-- Latest News -->
+        <div class="mb-20">
+            <h2 class="font-semibold text-5xl text-center mb-12">Latest News</h2>
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card-1 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure class="pt-4">
+                        <img src="./images/others/latest1.png" alt="Shoes"/>
+                    </figure>
+                    <div class="card-body space-y-5">
+                        <h2 class="card-title text-2xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                        <div class="card-actions">
+                        <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure class="pt-4">
+                        <img src="./images/others/latest2.png" alt="Shoes"/>
+                    </figure>
+                    <div class="card-body space-y-5">
+                        <h2 class="card-title text-2xl">Motorcycles & Scooters</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                        <div class="card-actions">
+                        <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card-1 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <figure class="pt-4">
+                        <img src="./images/others/latest3.png" alt="Shoes"/>
+                    </figure>
+                    <div class="card-body space-y-5">
+                        <h2 class="card-title text-2xl">2021 Honda CBR500R</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                        <div class="card-actions">
+                        <button class="btn btn-primary">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Client says -->
+         <div class="mb-20">
+            <h2 class="font-semibold text-5xl text-center mb-12">Happy <span class="text-primary">Clients says</span></h2>
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-14">
+                <!-- Card-1 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <div class="avatar place-content-center pt-8">
+                        <div class="w-28  rounded-full">
+                            <img src="./images/others/user-1.png" />
+                        </div>
+                    </div>
+                    <div class="card-body space-y-5 px-10 text-center">
+                        <p >Slate helps you see how many more days you need to work to reach your financial goal for the month and year</p>
+                        <div class="rating place-content-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="1 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="2 star" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="3 star"checked="checked"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="4 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="5 star" />
+                        </div>
+                        <h5 class="text-sm font-semibold text-blue-500">Regina Miles</h5>
+                        <h5 class="text-sm font-semibold mb-4">Banker</h5>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <div class="avatar place-content-center pt-8">
+                        <div class="w-28 rounded-full">
+                            <img src="./images/others/user-2.png" />
+                        </div>
+                    </div>
+                    <div class="card-body space-y-5 px-10 text-center">
+                        <p >Slate helps you see how many more days you need to work to reach your financial goal for the month and year</p>
+                        <div class="rating place-content-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="1 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="2 star" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="3 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="4 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="5 star" />
+                        </div>
+                        <h5 class="text-sm font-semibold text-blue-500">Regina Miles</h5>
+                        <h5 class="text-sm font-semibold mb-4">Banker</h5>
+                    </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="card bg-base-100 shadow-sm">
+                    <div class="avatar place-content-center pt-8">
+                        <div class="w-28 rounded-full">
+                            <img src="./images/others/user-3.png" />
+                        </div>
+                    </div>
+                    <div class="card-body space-y-5 px-10 text-center">
+                        <p >Slate helps you see how many more days you need to work to reach your financial goal for the month and year</p>
+                        <div class="rating place-content-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="1 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="2 star" checked="checked" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="3 star"/>
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="4 star" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-primary" aria-label="5 star" />
+                        </div>
+                        <h5 class="text-sm font-semibold text-blue-500">Regina Miles</h5>
+                        <h5 class="text-sm font-semibold mb-4">Banker</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
     <!-- Footer -->
